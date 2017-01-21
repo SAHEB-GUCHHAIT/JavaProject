@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Shipping Address</title>
+        <style type="text/css">
+            body{
+                margin: 0;
+                background-color: #aaaaaa;
+            }  
+            .container{
+                width: 900px;
+                height: 500px;
+                text-align: center;
+                background-color: lightpink;
+                border-radius: 4px;
+                margin: 0 auto;
+                margin-top: 20px;
+                padding-top: 40px;
+            } 
+          
+            
+        </style>
+    </head>
+    <body>
+        <table border="0" width="100%" >
+                 <tr>
+                 <td align="right">
+                 <form method="post" action="p_logout"> 
+                 <input type="submit" value="Logout"> 
+                </form>
+                 </td>
+                 </tr>
+                 </table>
+                 <br>
+                 <hr>
+        <div class="container">
+            <form action="medi_delivery" method="post">
+                 Customer ID:<input type="email" name="d3" value=""><br><br>
+                Approximate Date of Delivery:<input type="date" name="d1"><br><br>
+                Approximate Time of Delivery:<input type="time" name="d2"><br><br>
+            <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </body>
+</html>

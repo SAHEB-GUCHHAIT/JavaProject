@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+    <style type="text/css">
+        body{
+            background-color: dodgerblue;
+        }   
+     .form-line{
+        padding-top:12px;
+        padding-bottom:12px;
+    }
+    .form-all{
+        width:590px;
+        color:Black !important;
+        font-family:'Lucida Grande','Lucida Sans Unicode','Lucida Sans','Verdana','Tahoma','sans-serif';
+        font-size:14px;
+    }
+</style>
+</head>
+<body>
+        <table border="0" width="100%">
+                 <tr>
+                <td align="right">
+                <form method="post" action="p_logout"> 
+                <input type="submit" value="Logout"> 
+                </form>
+                </td>
+                </tr>
+                </table>
+<form class="feed_form" action="phar_feedback" method="post" >
+  
+  <div class="form-all">
+    <ul class="form-section">
+      <li class="form-input-wide" data-type="control_head">
+        <div class="form-header-group">
+          <div class="header-text">
+            <h1 class="form-header">
+              Feedback Form
+            </h1>
+            <div class="form-subHeader">
+                <b> We would love to hear your thoughts, concerns or problems with anything so we can improve!</b>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line">
+        <label class="form-label"> Feedback Type </label>
+        <div class="form-input-wide">
+          <div class="form-multiple-column">
+            <span class="form-radio-item">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio" name="q3" value="Comments" />
+              <label id="label_input_3_0"> Comments </label>
+            </span>
+            <span class="form-radio-item">
+              <span class="dragger-item">
+              </span>
+              <input type="radio" class="form-radio" name="q3" value="Questions" />
+              <label id="label_input_3_2"> Questions </label>
+            </span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line">
+        <label class="form-label">
+          Describe Feedback:
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_4" class="form-input-wide jf-required">
+          <textarea id="input_4" class="form-textarea" name="q4" cols="40" rows="6"></textarea>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_fullname" id="id_8">
+        <label class="form-label">
+          Pharmacist Name
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div class="form-input-wide">
+          <span class="form-sub-label-container">
+            <label class="form-sub-label"> First Name </label>
+            <input class="form-textbox" type="text" size="20" name="q5_name[first]" />
+          </span>
+          <span class="form-sub-label-container" style="vertical-align: top;">
+              <label class="form-sub-label"> Last Name </label>
+              <input class="form-textbox" type="text" size="20" name="q5_name[last]"/>
+            </span>
+        </div>
+      </li>
+      <li class="form-line">
+        <label class="form-label">
+          E-mail
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_6" class="form-input-wide">
+          <input type="email" class=" form-textbox validate" id="input_6" name="q6_email" size="32" value="" />
+        </div>
+      </li>
+      <li class="form-line">
+        <label class="form-label">
+          Mobile
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div class="form-input">
+          <input type="text" class=" form-textbox validate" name="q7_mobile" size="20" value="" />
+        </div>
+      </li>
+      
+      <li class="form-line" data-type="control_button" id="id_2">
+        <div class="form-input-wide">
+          <div style="margin-left:156px" class="form-buttons-wrapper">
+            <button type="submit" class="form-submit-button">
+              Submit Feedback
+            </button>
+          </div>
+        </div>
+      </li>
+     </ul>
+  </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+            body{
+                background-image: url(location.jpg); 
+                background-size: cover;
+            } 
+            .log{
+                width: 440px;
+                height: 300px;
+                background-color: rgba(0,0,2,0.5);
+                margin: 0 auto;
+                margin-top: 40px;
+                padding-top: 10px;
+                padding-left: 50px;
+                border-radius: 15px;
+                -webkit-border-radius: 15px;
+                color: aqua;
+                font-weight: bolder;
+                box-shadow: inset 4px 4px rgba(0,0,0,0.8);
+                font-size: 18px;
+            }
+          .log input[type="submit"]{
+                width: 100px;
+                height: 35px;
+                border: 0;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                background-color: skyblue;
+                font-weight: bolder;
+            }
+            .log select{
+            width: 240px;
+                height: 35px;
+                border: 0;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                background-color: skyblue;
+                font-weight: bolder;    
+            }
+        </style>
+    </head>
+    <body>
+        <table border="0" width="100%" >
+                 <tr>
+                 <td align="right">
+                 <form method="post" action="logout"> 
+                 <input type="submit" value="Logout"> 
+                </form>
+                 </td>
+                 </tr>
+                 </table>
+                 <hr>
+        <div class="log">
+            <h2>Location</h2>
+            <form method="post" action="show_doctor">
+                <select name="p5">
+<option value="Null">Choose Your Location</option>
+<option value="Contai">Contai</option>
+<option value="Henria">Henria</option>
+<option value="Chandipur">Chandipur</option>
+<option value="Tamluk">Tamluk</option>
+<option value="Kolkata">Kolkata</option>
+<option value="Chennai">Chennai</option>
+</select><br><br>
+                <input type="submit" value="SUBMIT">
+                
+            </form>   
+        </div>
+        
+    </body>
+</html>

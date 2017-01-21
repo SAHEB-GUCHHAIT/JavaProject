@@ -1,0 +1,73 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        <style type="text/css">
+            body{
+                background-image: url(pharmacis.jpg);
+                background-size: cover;
+            } 
+            .log{
+                width: 340px;
+                height: 260px;
+                background-color: rgba(0,0,2,0.5);
+                margin: 0 auto;
+                margin-top: 40px;
+                padding-top: 10px;
+                padding-left: 50px;
+                border-radius: 15px;
+                -webkit-border-radius: 15px;
+                color: aqua;
+                font-weight: bolder;
+                box-shadow: inset 4px 4px rgba(0,0,0,0.8);
+                font-size: 18px;
+            }
+            .log input[type="email"]{
+                width: 200px;
+                height: 35px;
+                border: 0;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                padding-left: 5px;
+                background-color:  lightgray;
+            }
+            .log input[type="password"]{
+                width: 200px;
+                height: 35px;
+                border: 0;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                padding-left: 5x;
+                background-color: lightgray;
+            }
+            .log input[type="submit"]{
+                width: 100px;
+                height: 35px;
+                border: 0;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                background-color: skyblue;
+                font-weight: bolder;
+            }
+              
+        </style>
+    </head>
+    <body>
+        <div class="log">
+            <h2>Pharmacist Login</h2>
+            <form method="post" action="p_login">
+                <input type="email" name="p1" placeholder="please enter your email"><br><br>
+                <input type="password" name="p2" placeholder="Please Enter your password"><br><br>
+                <input type="submit" value="Login">
+                <a href="p_forgot_pass.html" ><font color="red"><b> Forgot Password?</b></font></a><br>
+                <b>New User?</b>
+                <a href="p_signup.html"><font color="#38acec"><b>Register Here</b></font></a>
+            </form>  
+        </div>
+    </body>
+</html>

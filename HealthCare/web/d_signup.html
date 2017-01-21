@@ -1,0 +1,154 @@
+<html>
+<head>
+    <title>From </title>
+<style type="text/css">
+            body{
+                background-image: url(docregister.jpg);
+                background-size: cover;
+            } 
+            .log input[type="submit"]{
+                width: 120px;
+                height: 30px;
+                border: 0;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                background-color: skyblue;
+                font-weight: bolder;
+                color: navy;
+            }
+            .log input[type="reset"]{
+                width: 100px;
+                height: 30px;
+                border: 0;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                background-color: skyblue;
+                font-weight: bolder;
+            }
+            
+</style>            
+</head>
+<body>
+    <div class="log">
+<form method="post" action="d_signup"> 
+<center><h2><font color="yellow">Doctor's Registration Form</font></h2></center>
+<table style="width:100%; height:100%" cellpadding="0" cellspacing="0" >
+<tr>
+<td style="width: 30%; height: 50px;" ></td>
+<td style="width: 40%; height: 50px;" bgcolor="#808080">
+    
+    <table style= "width:100%; height:100%; border:0">
+<tr>
+    <td style="width: 100%; height: 5%;"><center><h3><b>Account Information</b></h3></center></td>
+</tr>
+<tr>
+<td style="width: 100%; height: 95%;">
+<table style="width:100%; height:100%">
+    <font color="#4d0000"> Note:The fields marked with * are mandatory.</font>
+<tr>
+    <td>Personal Id/login ID:<font color="red">*</font></td>
+<td><input type="text" name="doc1" placeholder="Enter your id" required ></td>
+
+</tr>
+<tr>
+<td>Password:<font color="red">*</font></td>
+<td><input type="password" name="doc2" placeholder="Please enter your password"></td>
+</tr>
+<tr>
+<td>Name:</td>
+<td><input type="text" name="doc3" placeholder="Dr." required ></td>
+</tr>
+<tr>
+<td>Email ID:<font color="red">*</font></td>
+<td><input type="text" name="doc4" placeholder="Enter a valid email id" required ></td>
+</tr>
+<tr>
+<td>Mobile No:<font color="red">*</font></td>
+<td><input type="text" name="doc5" placeholder="Enter your Phone no." required ></td>
+</tr>
+<tr>
+<td>Gender:</td>
+<td>
+<input type="radio" name="doc6" value="male" >Male
+<input type="radio" name="doc6" value="female">Female
+</td>
+</tr>
+<tr>
+<td>Date of Birth:<font color="red">*</font></td>
+<td><input type="date" name="doc7" ></td>
+</tr>
+
+<tr>
+<td>Marital Status :</td>
+<td>
+<select name="doc8">
+<option value="Null">Please Specify</option>
+<option value="Divorced">Divorced</option>
+<option value="Married">Married</option>
+<option value="Single">Single</option>
+</select>
+</td></tr>
+<tr>
+<td>Address:<font color="red">*</font></td>
+<td><textarea rows="4" cols="25" name="doc9"></textarea></td>
+</tr>
+<td>Security Question:<font color="red">*</font></td>
+<td>
+<select name="doc10">
+<option value="Null">Please Specify</option>
+<option value="petname">What is your pet name?</option>
+<option value="book">What is your favorite book? </option>
+<option value="teacher">Who is your first Teacher?</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>Answer:<font color="red">*</font></td>
+<td><input type="text" name="doc11"></td>
+</tr>
+<tr>
+<td>Location:</td>
+<td>
+<select name="doc12">
+<option value="Null">Please Specify</option>
+<option value="Contai">Contai</option>
+<option value="Henria">Henria</option>
+<option value="Chandipur">Chandipur</option>
+<option value="Tamluk">Tamluk</option>
+<option value="Kolkata">Kolkata</option>
+<option value="Chennai">Chennai</option>
+</select>
+</td></tr>
+<tr>
+<td>Specialties:</td>
+<td>
+<select name="doc13">
+<option value="Null">Please Specify</option>
+<option value="ortho">Orthopedic Surgeon</option>
+<option value="gyne">Gynecologist</option>
+<option value="cardio">Cardiologist</option>
+<option value="orthophy">Orthopedic Sports Medicine Physician</option>
+<option value="neuro">Neurologist</option>
+<option value="emergency">Emergency Medicine Physician</option>
+<option value="surgeon">General Surgeon</option>
+<option value="urolo">Urologist</option>
+<option value="spinal">Spinal Cord Injury Specialist</option>
+</select>
+</td></tr>
+<tr>
+<td><input type="submit" value="Create Account"></td>
+<td><input type="reset" value="Refresh"></td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+</td>
+<td style="width: 30%; height: 50px;" ></td>
+</tr>
+</table>
+</form>
+    </div>        
+</body>
+</html>

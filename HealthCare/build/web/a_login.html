@@ -1,0 +1,70 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        <style type="text/css">
+            body{
+                background-image: url(wide.jpg);
+                background-size: cover;
+            } 
+            .log{
+                width: 340px;
+                height: 260px;
+                background-color: rgba(0,0,2,0.5);
+                margin: 0 auto;
+                margin-top: 40px;
+                padding-top: 10px;
+                padding-left: 50px;
+                border-radius: 15px;
+                -webkit-border-radius: 15px;
+                color: aqua;
+                font-weight: bolder;
+                box-shadow: inset 4px 4px rgba(0,0,0,0.8);
+                font-size: 18px;
+            }
+            .log input[type="text"]{
+                width: 200px;
+                height: 35px;
+                border: 0;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                padding-left: 5px;
+                background-color:  lightgray;
+            }
+            .log input[type="password"]{
+                width: 200px;
+                height: 35px;
+                border: 0;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                padding-left: 5x;
+                background-color: lightgray;
+            }
+            .log input[type="submit"]{
+                width: 100px;
+                height: 35px;
+                border: 0;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                background-color: skyblue;
+                font-weight: bolder;
+            }
+              
+        </style>
+    </head>
+    <body>
+        <div class="log">
+            <h2>Admin Login</h2>
+            <form method="post" action="a_login">
+                <input type="text" name="a1" placeholder="Please Enter ID"><br><br>
+                <input type="password" name="a2" placeholder="Please Enter your password"><br><br>
+                <input type="submit" value="Login">
+            </form>   
+        </div>
+    </body>
+</html>
