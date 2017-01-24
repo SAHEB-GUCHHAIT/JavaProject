@@ -64,7 +64,10 @@ public class medi_dispatch extends HttpServlet
            {
              pw.println("<tr><td>"+rs.getString(1)+"</td><td>"+rs.getString(2)+"</td><td>"+rs.getString(3)+"</td><td>"+rs.getString(4)+"</td><td>"+rs.getString(5)+"</td><td>"+rs.getString(6)+"</td></tr>");
            }
-           pw.println("</table></body></html>");
+           pw.println("</table>"+
+                   "<hr>  \n" +
+                    "<p align=center>Go to Home Page<a href=\"Phar_Home.html\">Click Here</a></p>"
+                   + "</body></html>");
           con.close();
            
         }

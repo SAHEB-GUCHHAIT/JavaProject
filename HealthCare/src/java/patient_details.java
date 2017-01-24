@@ -66,7 +66,10 @@ public class patient_details extends HttpServlet
            {
              pw.println("<tr><td>"+rs.getString(2)+"</td><td>"+rs.getString(3)+"</td><td>"+rs.getString(4)+"</td><td>"+rs.getString(5)+"</td><td><a href=confirmappo?id="+rs.getString(3)+">Confirm</a></td></tr>");
            }
-           pw.println("</table></body></html>");
+           pw.println("</table>"+
+                    "<hr>  \n" +
+                    "<p align=center>Go to Home Page<a href=\"DoctorHome.html\">Click Here</a></p>"+
+                   "</body></html>");
           con.close();
            
         }

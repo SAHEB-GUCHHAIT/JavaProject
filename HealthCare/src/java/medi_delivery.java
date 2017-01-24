@@ -19,7 +19,9 @@ public class medi_delivery extends HttpServlet {
         PrintWriter pw=res.getWriter();
         String cid=req.getParameter("d3");
         String medi=req.getParameter("d4");
-        String date=req.getParameter("d1");
+        String day=req.getParameter("d11");
+        String month=req.getParameter("d12");
+        String year=req.getParameter("d13");
         String time=req.getParameter("d2");
         try
         {
@@ -27,7 +29,7 @@ public class medi_delivery extends HttpServlet {
            Connection con=DriverManager.getConnection
                    ("jdbc:oracle:thin:@localhost:1521:XE","saheb","password");
            Statement stmt=con.createStatement();
-           String q4="insert into delivery_status values('"+cid+"','"+medi+"','"+date+"','"+time+"')";
+           String q4="insert into delivery_status values('"+cid+"','"+medi+"','"+day+"','"+month+"','"+year+"','"+time+"')";
            int y=stmt.executeUpdate(q4);
            if(y>0)
            {

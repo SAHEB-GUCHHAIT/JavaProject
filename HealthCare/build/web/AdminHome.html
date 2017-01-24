@@ -1,0 +1,55 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin View</title>
+        <style type="text/css">
+            body{
+                margin: 0;
+                background-color: #aaaaaa;
+            }  
+            .container{
+                width: 900px;
+                height: 550px;
+                text-align: center;
+                background-color: lightpink;
+                border-radius: 4px;
+                margin: 0 auto;
+                margin-top: 2px;
+                padding-top: 20px;
+            }           
+        </style>
+    </head>
+    <body>
+        <table border="0" width="100%" >
+                 <tr>
+                 <td align="right">
+                 <form method="post" action="a_logout">
+                 <input type="submit" value="Logout">
+                </form>
+                 </td>
+                 </tr>
+                 </table>
+                 <br>
+                 <hr>
+        <div class="container">
+            <h2>Doctor's Confirmation</h2>
+            <a href=doctor_req?id=><b>View Doctor</b></a>
+<br>
+                <br>
+            <a href=doctor_feed?id=><h3>Doctor's Feedback</h3></a>
+            <br>
+            <a href=pharmacist_feed?id=><h3>Pharmacist Feedback</h3></a>
+            <br>
+            <a href=patient_feed?id=><h3>Patient Feedback</h3></a>
+            <br>
+            <h2>Payment Generate</h2>
+            <a href=doctor_payment?id=><h3>Doctor's Payment</h3></a>
+   <br>            
+            <a href=pharmacy_payment?id=><h3>Pharmacist's Payment</h3></a>
+        </div>
+    </body>
+</html>

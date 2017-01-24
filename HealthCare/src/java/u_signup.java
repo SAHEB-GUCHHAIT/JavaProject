@@ -36,11 +36,74 @@ public class u_signup extends HttpServlet
         boolean result=ob.InsertMethod();
         if(result==true)
         {
-            pw.println("Success");
+            pw.println("<!DOCTYPE html>\n" +
+"<html>\n" +
+"    <head>\n" +
+"        <title>REGISTER SUCCESS</title>\n" +
+"        <style type=\"text/css\">\n" +
+"            body{\n" +
+"                margin: 0;\n" +
+"                background-color: #aaaaaa;\n" +
+"            }  \n" +
+"            .container{\n" +
+"                width: 900px;\n" +
+"                height: 500px;\n" +
+"                text-align: center;\n" +
+"                background-color: lightpink;\n" +
+"                border-radius: 4px;\n" +
+"                margin: 0 auto;\n" +
+"                margin-top: 20px;\n" +
+"                padding-top: 40px;\n" +
+"            } \n" +
+"          \n" +
+"            \n" +
+"        </style>\n" +
+"    </head>\n" +
+"    <body>\n" +
+"        \n" +
+"        <div class=\"container\">\n" +
+"        <h2>Your Successfully Registered.</h2>\n" +
+"                 <hr>  \n" +
+"                 Go to Login Page<a href=\"u_login.html\">Click Here</a>        \n" +
+"        </div>\n" +
+"    </body>\n" +
+"</html>\n" +
+"");
         }
         else
         {
-            pw.println("Unsuccess");
+            pw.println("<!DOCTYPE html>\n" +
+"<html>\n" +
+"    <head>\n" +
+"        <title>REGISTER failed</title>\n" +
+"        <style type=\"text/css\">\n" +
+"            body{\n" +
+"                margin: 0;\n" +
+"                background-color: #aaaaaa;\n" +
+"            }  \n" +
+"            .container{\n" +
+"                width: 900px;\n" +
+"                height: 500px;\n" +
+"                text-align: center;\n" +
+"                background-color: lightpink;\n" +
+"                border-radius: 4px;\n" +
+"                margin: 0 auto;\n" +
+"                margin-top: 20px;\n" +
+"                padding-top: 40px;\n" +
+"            } \n" +
+"          \n" +
+"            \n" +
+"        </style>\n" +
+"    </head>\n" +
+"    <body>\n" +
+"        \n" +
+"        <div class=\"container\">\n" +
+"        <h2>Your Registration Failed..</h2>\n" +
+"                 <hr>  \n" +
+"        </div>\n" +
+"    </body>\n" +
+"</html>\n" +
+"");
         }
     }
 }

@@ -59,7 +59,7 @@ public class medi_order extends HttpServlet {
 "        <table border=\"0\" width=\"100%\" >\n" +
 "                 <tr>\n" +
 "                 <td align=\"right\">\n" +
-"                 <form method=\"post\" action=\"u_logout\"> \n" +
+"                 <form method=\"post\" action=\"logout\"> \n" +
 "                 <input type=\"submit\" value=\"Logout\"> \n" +
 "                </form>\n" +
 "                 </td>\n" +
@@ -69,6 +69,8 @@ public class medi_order extends HttpServlet {
 "                 <hr>\n" +
 "        <div class=\"container\">\n" +
 "        <h3><b>Order Generate Successfully.</b></h3>   "+
+"                     <hr>  \n" +
+"                 <p align=center>Go to Home Page<a href=\"UserHome.html\">Click Here</a></p>"+
 "        </div>\n" +
 "    </body>\n" +
 "</html>\n" +

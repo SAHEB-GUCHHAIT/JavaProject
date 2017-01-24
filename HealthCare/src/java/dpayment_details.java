@@ -63,6 +63,8 @@ public class dpayment_details extends HttpServlet {
 "                 <hr>\n" +
 "        <div class=\"container\">\n" +
 "        <h2><b>Your Pay Amount:</b></h2><b>Rs:-"+rs.getString(2)+"</b>"+
+"<hr>  \n" +
+"<p align=center>Go to Home Page<a href=\"DoctorHome.html\">Click Here</a></p>"+                 
 "        </div>\n" +
 "    </body>\n" +
 "</html>");

@@ -71,7 +71,8 @@ public class doctor_req extends HttpServlet {
            {
              pw.println("<tr><td>"+rs.getString(3)+"</td><td>"+rs.getString(4)+"</td><td>"+rs.getString(5)+"</td><td>"+rs.getString(14)+"</td><td><a href=doc_confirm?id="+rs.getString(13)+">Confirm</a></td></tr>");
            }
-           pw.println("</table></body></html>");
+           pw.println("</table><hr>  \n" +
+"                 <p align=center>Go to Home Page<a href=\"AdminHome.html\">Click Here</a></p></body></html>");
            con.close();
            }
         

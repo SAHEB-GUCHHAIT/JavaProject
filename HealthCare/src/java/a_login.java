@@ -23,7 +23,7 @@ public class a_login extends HttpServlet {
 "        <style type=\"text/css\">\n" +
 "            body{\n" +
 "                margin: 0;\n" +
-"                background-color: #aaaaaa;\n" +
+"                background-image: url(admin.jpg);\n" +
 "            }  \n" +
 "            .container{\n" +
 "                width: 900px;\n" +

@@ -149,7 +149,41 @@ public class u_login extends HttpServlet {
      }
      else
      {
-         pw.println("Password don't Match.");
+         pw.println("<!DOCTYPE html>\n" +
+"<html>\n" +
+"    <head>\n" +
+"        <title>login failed</title>\n" +
+"        <style type=\"text/css\">\n" +
+"            body{\n" +
+"                margin: 0;\n" +
+"                background-color: #aaaaaa;\n" +
+"            }  \n" +
+"            .container{\n" +
+"                width: 900px;\n" +
+"                height: 500px;\n" +
+"                text-align: center;\n" +
+"                background-color: lightpink;\n" +
+"                border-radius: 4px;\n" +
+"                margin: 0 auto;\n" +
+"                margin-top: 20px;\n" +
+"                padding-top: 40px;\n" +
+"            } \n" +
+"          \n" +
+"            \n" +
+"        </style>\n" +
+"    </head>\n" +
+"    <body>\n" +
+"        \n" +
+"        <div class=\"container\">\n" +
+"        <h2>Password do not Match.</h2>\n" +
+                 "Please try again."+
+"                 <hr>  \n" +
+"                 Go to Login Page<a href=\"u_login.html\">Click Here</a>        \n" +
+                 "Forgot Password?<a href=\"u_forgot_pass.html\">Click Here</a>"+
+"        </div>\n" +
+"    </body>\n" +
+"</html>\n" +
+"");
      }
           con.close();
            

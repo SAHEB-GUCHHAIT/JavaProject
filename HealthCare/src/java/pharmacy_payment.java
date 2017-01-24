@@ -23,7 +23,7 @@ public class pharmacy_payment extends HttpServlet {
             Connection con=DriverManager.getConnection
                     ("jdbc:oracle:thin:@localhost:1521:XE","saheb","password");
             Statement stmt=con.createStatement();
-            String q1="select * from order_medicines where delivery='Yes'"; 
+            String q1="select * from delivery_status where month='jan'"; 
             ResultSet rs=stmt.executeQuery(q1);
             int count=0;
             while(rs.next())

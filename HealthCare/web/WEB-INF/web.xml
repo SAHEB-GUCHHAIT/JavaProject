@@ -224,6 +224,18 @@
         <servlet-name>p_logout</servlet-name>
         <servlet-class>p_logout</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>p_security_check</servlet-name>
+        <servlet-class>p_security_check</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>p_resetpass</servlet-name>
+        <servlet-class>p_resetpass</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>p_updatepass</servlet-name>
+        <servlet-class>p_updatepass</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>u_signup</servlet-name>
         <url-pattern>/u_signup</url-pattern>
@@ -447,6 +459,18 @@
     <servlet-mapping>
         <servlet-name>p_logout</servlet-name>
         <url-pattern>/p_logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>p_security_check</servlet-name>
+        <url-pattern>/p_security_check</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>p_resetpass</servlet-name>
+        <url-pattern>/p_resetpass</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>p_updatepass</servlet-name>
+        <url-pattern>/p_updatepass</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

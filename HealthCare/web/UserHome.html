@@ -1,0 +1,114 @@
+<!DOCTYPE html
+<html>
+    <head>
+        <title>Welcome to Health Services</title>
+        <style type="text/css">
+            body{
+                background-image: url(wide.jpg);
+                background-size: cover;
+            }
+            .h2{
+                color:deeppink;
+            }
+            .log{
+                width: 700px;
+                height: 560px;
+                background-color: rgba(0,0,2,0.5);
+                margin: 0 auto;
+                margin-top: 8px;
+                padding-top: 20px;
+                padding-left: 50px;
+                border-radius: 15px;
+                -webkit-border-radius: 15px;
+                color: aqua;
+                font-weight: bolder;
+                box-shadow: inset 4px 4px rgba(0,0,0,0.8);
+                font-size: 18px;
+            }
+            .log input[type="text"]{
+                width: 200px;
+                height: 35px;
+                border: 0;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                padding-left: 5px;
+                background-color:  lightgray;
+            }
+            .log input[type="password"]{
+                width: 200px;
+                height: 35px;
+                border: 0;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                padding-left: 5x;
+                background-color: lightgray;
+            }
+            .log input[type="submit"]{
+                width: 100px;
+                height: 35px;
+                border: 0;
+      
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                background-color: skyblue;
+                font-weight: bolder;
+            }                      
+        </style>
+    </head>
+    <body>
+                <table border="0" width="100%">
+                <tr>
+                <td align="right">
+                <form method="post" action="logout">
+                <input type="submit" value="Logout">
+                </form>
+                </td>
+                </tr>
+                </table>
+                <br>
+        <div class="log">
+         <form method="post" action="user_view">
+         <p>How To Use My Medicine?
+My Medicine helps you safely take your medicine.
+Interactions:: Check for interactions between your medications.
+FDA Warnings & Alerts:: Learn if there are any major FDA warnings or alerts on saved medicines.</p>
+        <a href="booking.html">ORDER MEDICINE</a>                      
+        <br>
+        <h2>SYMPTOM</h2>
+        <b>Choose Your Symptoms:</b>
+        <select name="s1">
+            <option value="null">your's Symptom</option>
+            <option value="fever">Fever</option>
+            <option value="cold">Cold, Flu, & Cough</option>
+            <option value="diabetes">Diabetes</option>
+        </select>
+        <br>
+        <br>
+        <b>How day's you are suffering?</b>
+        <select name="s2">
+            <option value="null">choose days</option>
+            <option value="day1">1-2 Day's</option>
+            <option value="day7">3-7 Day's</option>
+            <option value="days">Over 7 day's</option>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="SUBMIT">                 
+          <br>
+          <br>
+          Do you want Appointment a Doctor?(Without our medicine support.)
+        <br>
+        <a href="location.html">GET APPOINTMENT</a>
+        <br>
+        <br>
+        <a href=appo_date?id=>Notification</a>    
+        <br> 
+        <br>
+        <a href=deli_status?id=>View Delivery Status</a>    
+        <br>                  
+        <br>
+        <a href="u_feedback.html">Leave a Comment</a>
+        </form> 
+        </div>
+    </body>
+</html>

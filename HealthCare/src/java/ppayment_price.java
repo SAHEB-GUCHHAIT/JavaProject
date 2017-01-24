@@ -67,6 +67,8 @@ public class ppayment_price extends HttpServlet {
 "                 </table>\n" + 
                       "<div class=\"log\"> "+
                       "<h2><b>Already Created.</b></h2>"+
+"                   <hr>  \n" +
+"                 <p align=center>Go to Home Page<a href=\"AdminHome.html\">Click Here</a></p>"+
                       "</div>"+
                   "</body>\n");
           }
@@ -114,6 +116,8 @@ public class ppayment_price extends HttpServlet {
 "                 </table>\n" + 
                       "<div class=\"log\"> "+
                       "<b>Payment amount generate Successfully.</b>"+
+ "                     <hr>  \n" +
+"                 <p align=center>Go to Home Page<a href=\"AdminHome.html\">Click Here</a></p>"+
                       "</div>"+
                   "</body>\n");
             }

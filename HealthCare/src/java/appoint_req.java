@@ -31,7 +31,50 @@ public class appoint_req extends HttpServlet
            int x=stmt.executeUpdate(q1);
            if(x>0)
                    {
-                      pw.println("Appointment request send successfully.");
+                      pw.println("<!DOCTYPE html>\n" +
+"<html>\n" +
+"    <head>\n" +
+"        <title>Appoentment request</title>\n" +
+"        <style type=\"text/css\">\n" +
+"            body{\n" +
+"                margin: 0;\n" +
+"                background-color: #aaaaaa;\n" +
+"            }  \n" +
+"            .container{\n" +
+"                width: 900px;\n" +
+"                height: 500px;\n" +
+"                text-align: center;\n" +
+"                background-color: lightpink;\n" +
+"                border-radius: 4px;\n" +
+"                margin: 0 auto;\n" +
+"                margin-top: 20px;\n" +
+"                padding-top: 40px;\n" +
+"            } \n" +
+"          \n" +
+"            \n" +
+"        </style>\n" +
+"    </head>\n" +
+"    <body>\n" +
+"        <table border=\"0\" width=\"100%\" >\n" +
+"                 <tr>\n" +
+"                 <td align=\"right\">\n" +
+"                 <form method=\"post\" action=\"logout\"> \n" +
+"                 <input type=\"submit\" value=\"Logout\"> \n" +
+"                </form>\n" +
+"                 </td>\n" +
+"                 </tr>\n" +
+"                 </table>\n" +
+"                 <br>\n" +
+"                 <hr>\n" +                              
+"        \n" +
+"        <div class=\"container\">\n" +
+"        <h2>Appointment request send successfully.</h2>\n" +
+"                 <hr>  \n" +
+"                 Go to Home Page<a href=\"UserHome.html\">Click Here</a>        \n" +
+"        </div>\n" +
+"    </body>\n" +
+"</html>\n" +
+"");
                    }
            else
            {

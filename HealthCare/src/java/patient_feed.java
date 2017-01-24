@@ -71,7 +71,8 @@ public class patient_feed extends HttpServlet {
              pw.println("<tr><td>"+rs.getString(3)+" "+rs.getString(4)+"</td><td>"+rs.getString(1)+"</td><td>"+rs.getString(2)+"</td><td>"+rs.getString(5)+"</td><td>"+rs.getString(6)+"</td></tr>");
             count++;
            }
-           pw.println("</table></body></html>");
+           pw.println("</table><hr>  \n" +
+"                 <p align=center>Go to Home Page<a href=\"AdminHome.html\">Click Here</a></p></body></html>");
         }           
         catch(Exception e) 
         {
